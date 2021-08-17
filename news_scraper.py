@@ -1,5 +1,4 @@
 # Python News Scraper 
-# /Users/levifarinas/opt/anaconda3/bin/python
 from bs4 import BeautifulSoup
 import requests
 import re
