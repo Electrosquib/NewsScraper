@@ -13,7 +13,7 @@ password = '' # Sender gmail Account password
 context = ssl.create_default_context()
 sender = '' # Sender gmail account address (hello@gmail.com)
 receiver = '' # Email address of recipient
-name = 'Levi'
+name = 'John'
 
 page = requests.get('https://news.ycombinator.com/')
 soup = BeautifulSoup(page.text, 'html.parser')
