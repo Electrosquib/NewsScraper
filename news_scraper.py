@@ -9,10 +9,11 @@ import smtplib, ssl
 limit = 250
 
 port = 465
-password = 'Anaklusmos@12'
+password = '' # Sender gmail Account password
 context = ssl.create_default_context()
-sender = 'esquib.code@gmail.com'
-receiver = 'electrosquib@gmail.com'
+sender = '' # Sender gmail account address (hello@gmail.com)
+receiver = '' # Email address of recipient
+name = 'Levi'
 
 page = requests.get('https://news.ycombinator.com/')
 soup = BeautifulSoup(page.text, 'html.parser')
@@ -34,7 +35,7 @@ for i in ids:
 print(links)
 print(titles)
 message = f"""From: News Collection <from@fromdomain.com>
-To: Levi <to@todomain.com>
+To: {name} <to@todomain.com>
 Subject: Your Hacker News Collection
 
 
